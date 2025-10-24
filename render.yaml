@@ -2,9 +2,7 @@ services:
   - type: web
     name: openwebui
     env: docker
-    plan: starter
     autoDeploy: true
-    healthCheckPath: /
     dockerfilePath: ./Dockerfile
     envVars:
       - key: PORT
